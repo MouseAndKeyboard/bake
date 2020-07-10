@@ -1,6 +1,7 @@
 #include "unity.h"
 
 #include <stdlib.h>
+#include <string.h>
 
 #include "graph.h"
 
@@ -12,18 +13,11 @@ void tearDown(void)
 {
 }
 
-void test_create_node(void)
+void test_actions_added(void)
 {
-    node_t *root = new_node();
-    delete_node(root);
-}
-
-void test_create_actions(void)
-{
-    node_t *root = new_node();
-    add_action(root, "action1");
-    add_action(root, "action number 2");
-    TEST_ASSERT_TRUE( strcmp(root->actions[0], "action1") );
-    TEST_ASSERT_TRUE( strcmp(root->actions[0], "action2") );
+    char *actions[] = { "action1", "action number 2" };
+    node_t *root = new_node(2, actions);
+    TEST_ASSERT_TRUE( strcmp(root->actions[0], "action1") == 0 );
+    TEST_ASSERT_TRUE( strcmp(root->actions[1], "action number 2") == 0 );
     delete_node(root);
 }
