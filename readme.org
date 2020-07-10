@@ -7,6 +7,9 @@ A custom implementation of the program [[https://www.gnu.org/software/make/][Mak
 bake [command-line-options] [target-name]
 #+END_SRC
 
+** Target name
+Output file name.
+
 ** command-line-options
 #+BEGIN_SRC
 -C directoryname
