@@ -1,0 +1,10 @@
+.DS_Store
+.idea
+*.log
+tmp/
+
+build/artifacts
+build/gcov
+build/logs
+build/temp
+build/test
