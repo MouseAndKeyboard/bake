@@ -12,8 +12,8 @@ void tearDown(void)
 {
 }
 
-void test_create_graph(void)
+void test_create_node(void)
 {
-    node_t *root = malloc(sizeof(node_t));
-    free(root);
+    node_t *root = new_node("node data");
+    delete_node(root);
 }
