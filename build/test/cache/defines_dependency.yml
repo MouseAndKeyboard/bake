@@ -1,3 +1,7 @@
 ---
 src/main.c:
 - TEST
+src/target_checker.c:
+- TEST
+src/graph.c:
+- TEST

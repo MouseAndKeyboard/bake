@@ -25,6 +25,14 @@ void test_main_NeedToImplement(void)
 
 {
 
-    UnityIgnore( (("Need to Implement main")), (UNITY_UINT)(15));
+    char *params[] = {"bake"};
+
+    UnityAssertEqualNumber((UNITY_INT)((main(1, params))), (UNITY_INT)((0)), (
+
+   ((void *)0)
+
+   ), (UNITY_UINT)(16), UNITY_DISPLAY_STYLE_INT);
+
+
 
 }
