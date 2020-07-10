@@ -12,7 +12,7 @@ void tearDown(void)
 {
 }
 
-void test_graph_NeedToImplement(void)
+void test_create_graph(void)
 {
     node_t *root = malloc(sizeof(node_t));
     free(root);
