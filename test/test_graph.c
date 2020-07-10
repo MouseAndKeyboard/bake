@@ -14,6 +14,6 @@ void tearDown(void)
 
 void test_create_node(void)
 {
-    node_t *root = new_node("node data");
+    node_t *root = new_node();
     delete_node(root);
 }
